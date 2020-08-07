@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!--/*  Head content  */-->
+	<th:block th:replace="fragments/elements :: header"/>
+	<title>Rhapsody Project | Descarga</title>
+</head>
+<body>
+<div class="wrapper d-flex align-items-stretch">
+	<div id="content">
+		<!--/*  Top navigation bar  */-->
+		<div th:replace="fragments/elements :: navbar"></div>
+		<!--/*  Main content  */-->
+		<div class="row no-gutters justify-content-center mt-lg-5 container--light-font">
+			<!--/*  Download container  */-->
+			<div class="shadow bg-light rounded col-11 col-lg-6 border mt-3 m-lg-3 p-3 p-lg-4">
+				<th:block th:switch="${format}">
+					<th:block th:case="word">
+						<div class="h5">Tus archivos de tipo Word han sido generados</div>
+					</th:block>
+					<th:block th:case="calendar">
+						<div class="h5">Tus archivos de tipo iCalendar han sido generados</div>
+					</th:block>
+				</th:block>
+				<div class="dropdown-divider"></div>
+				<div class="py-0 py-3">
+					<div class="p-2">Lista de archivos generados:</div>
+					<th:block th:switch="${archivos} != null">
+						<th:block th:case="true">
+							<details th:each="file : ${archivos}" th:if="${format} == 'word'">
+								<summary th:text="${file.getName()}"></summary>
+								<ul>
+									<li th:each="homework : ${file.listFiles()}" th:text="${homework.getName()}"></li>
+								</ul>
+							</details>
+							<ul th:if="${format} != 'word'">
+								<li th:each="file : ${archivos}" th:text="${file.getName()}"></li>
+							</ul>
+						</th:block>
+						<div th:case="false">
+							<p>Aun no se ha generado ningun archivo</p>
+						</div>
+					</th:block>
+				</div>
+				<div class="dropdown-divider"></div>
+				<div class="float-right">
+					<a class="btn btn-secondary btn-sm" th:href="@{/home}">Regresar al inicio</a>
+					<a class="btn btn-primary btn-sm" th:href="@{'/home/'+${format}+'/download'}">Descargar archivos</a>
+				</div>
+			</div>
+		</div>
+		<!--/*  Footer fragment  */-->
+		<div th:replace="fragments/elements :: footer"></div>
+	</div>
+</div>
+</body>
+</html>

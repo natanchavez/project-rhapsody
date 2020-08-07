@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!--/*  Head content  */-->
+	<th:block th:replace="fragments/elements :: header"/>
+	<title>Rhapsody Project | Preguntas frecuentes</title>
+</head>
+<body>
+<div class="wrapper d-flex align-items-stretch">
+	<div id="content">
+		<!--/*  Top navigation bar  */-->
+		<th:block th:replace="fragments/elements :: navbar"/>
+		<div class="row no-gutters justify-content-center">
+			<div class="shadow bg-light rounded col-12 col-lg-8 border mt-0 m-lg-5 p-3 p-md-5 content--font-size">
+				<p class="h4">Preguntas frecuentes</p>
+				<!--/*  Question list  */-->
+				<div class="accordion" id="accordionExample">
+					<!--/*  Question number 1  */-->
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseOne" aria-expanded="true"
+								   class="btn btn-link btn-block text-left"
+								   data-target="#collapseOne" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">¿A quién está dirigida esta aplicación?</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingOne" class="collapse" data-parent="#accordionExample"
+							 id="collapseOne">
+							<div class="card-body">
+								<p>
+									Esta aplicación fue creada para ser utilizada por estudiantes de la Universidad
+									Nacional Autónoma de México (UNAM) que pertenecen al Sistema Universidad Abierta y
+									Educación a Distancia (SUAYED) y más específicamente a la Facultad de Contaduría y
+									Administración (FCA) en la modalidad a distancia, es decir, esta aplicación puede
+									ser utilizada por: estudiantes de la UNAM, pertenecientes a la FCA, en la modalidad
+									a distancia, cabe mencionar que la descripción anterior abarca a las tres
+									licenciaturas disponibles en la FCA las cuales son administración, contabilidad e
+									informática.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 2  */-->
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseTwo" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseTwo" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">¿Qué es y qué hace esta aplicación?</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionExample"
+							 id="collapseTwo">
+							<div class="card-body">
+								<p>
+									El proyecto rhapsody es una aplicación principalmente escrita utilizando el lenguaje
+									de programación Java, lo que hace es tomar un plan de trabajo (semestral) en formato
+									PDF y lee toda su información para extraer únicamente ciertas partes del texto las
+									cuales serán utilizadas para generar un archivo con formato iCalendar o Word.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 3  */-->
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseThree" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseThree" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">¿Qué es y para que me sirve el archivo iCalendar?</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingThree" class="collapse" data-parent="#accordionExample"
+							 id="collapseThree">
+							<div class="card-body">
+								<p>
+									iCalendar es un formato de archivo, no confundir con alguna aplicación asociada a la
+									compañía Apple. Un archivo de tipo iCalendar permite a los usuarios almacenar y
+									compartir entre dispositivos y servicios calendarios con eventos en fechas
+									específicas, es decir, en esta aplicación el archivo iCalendar contendrá una lista
+									de eventos en el calendario donde cada uno de ellos serán las tareas por entregar
+									durante todo el semestre para una asignatura específica, cada tarea tendrá asociada
+									la fecha de entrega, la descripción, el nombre de la materia, entre otros datos.<br>
+									Por cada uno de los planes de trabajo subidos esta aplicación generará un archivo
+									iCalendar, es decir, se creará un calendario por asignatura, de esta manera dichos
+									archivos pueden ser importados en los calendarios de servicios como Google, Outlook,
+									Apple, Yahoo!, etc.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 4  */-->
+					<div class="card">
+						<div class="card-header" id="headingFour">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseFour" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseFour" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">¿Qué es y para que me sirve el archivo Word?</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingFour" class="collapse" data-parent="#accordionExample"
+							 id="collapseFour">
+							<div class="card-body">
+								<p>
+									El archivo de tipo Word será simplemente un documento que contendrá una caratula,
+									normalmente las tareas que como estudiantes del SUAYED debemos entregar suelen ser
+									en su mayoría archivos de texto realizados en Word, como parte de una buena
+									presentación dichos documentos deben ir acompañados de una caratula (a no ser que se
+									especifique lo contrario), así entonces esta aplicación generará un archivo para
+									todas y cada una de las tareas a entregar en el semestre, y cada archivo contendrá
+									una caratula con datos como el nombre de la licenciatura, nombre de la materia, tipo
+									de actividad, fecha de entrega, entre otros datos. Cabe destacar que cada archivo
+									generado en este formato será específico para cada tarea de cada asignatura.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 5  */-->
+					<div class="card">
+						<div class="card-header" id="headingFive">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseFive" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseFive" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">¿En qué me beneficia utilizar esta aplicación?</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingFive" class="collapse" data-parent="#accordionExample"
+							 id="collapseFive">
+							<div class="card-body">
+								<p>
+									El beneficio de utilizar esta aplicación radica en el ahorro de tiempo y esfuerzo
+									por medio de la automatización de una actividad repetitiva, la cual puede llegar a
+									consumir desde unos cuantos minutos de manera individual hasta una cantidad
+									considerable de horas, teniendo en cuenta el número de veces que dicha actividad
+									será repetida a lo largo de toda la licenciatura. Para una mayor profundización de
+									este tema te invito a visitar la sección de
+									"<a href="/case-study">estudio de caso</a>".
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 6  */-->
+					<div class="card">
+						<div class="card-header" id="headingSix">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseSix" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseSix" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">¿Qué planes de trabajo acepta esta aplicación?</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingSix" class="collapse" data-parent="#accordionExample"
+							 id="collapseSix">
+							<div class="card-body">
+								<p>
+									Los planes de trabajo que esta aplicación puede procesar son aquellos que de manera
+									semestral se encuentran disponibles en la
+									<a href="http://fcaenlinea1.unam.mx/planes_distancia/grupos.php?sem=1"
+									   target="_blank">página del SUAYED de la FCA</a>
+									para la modalidad a distancia, dichos archivos tienen en común una cierta
+									estructura, es decir, se basan en un formato común pero que incluye información
+									específica para cada asignatura, así entonces cualquier plan de trabajo puede ser
+									procesado siempre y cuando venga de la página antes referida. Cabe mencionar que
+									actualmente se pueden procesar únicamente los planes semestrales y no los
+									intersemestrales, esto se debe a que estos últimos utilizan un formato de
+									presentación diferente lo cual requiere la implementación de una nueva funcionalidad
+									para así tener la capacidad de procesar este otro tipo de documento.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 7  */-->
+					<div class="card">
+						<div class="card-header" id="headingSeven">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseSeven" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseSeven" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">
+											¿En esta aplicación puedo ingresar planes de trabajo del periodo
+											intersemestral?
+										</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingSeven" class="collapse" data-parent="#accordionExample"
+							 id="collapseSeven">
+							<div class="card-body">
+								<p>
+									Por el momento no es posible, la manera en la que está estructurado el documento es
+									muy similar a los planes de trabajo semestrales, sin embargo, existen varias
+									diferencias en el texto las cuales dificultan que en su estado actual esta
+									aplicación pueda extraer la información necesaria de manera correcta. En un inicio
+									esta aplicación fue creada para procesar únicamente planes de trabajo semestrales,
+									sin embargo, dentro de la lista de pendientes se tiene considerado que en una
+									versión futura también se puedan procesar los planes de trabajo intersemestrales.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 8  */-->
+					<div class="card">
+						<div class="card-header" id="headingEight">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseEight" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseEight" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">
+											¿Puedo utilizar esta aplicación si estudio en la modalidad escolarizada o
+											abierta de la FCA?
+										</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingEight" class="collapse" data-parent="#accordionExample"
+							 id="collapseEight">
+							<div class="card-body">
+								<p>
+									Por el momento no es posible, esto se debe a que para los planes de trabajo de la
+									modalidad abierta la estructura del documento es diferente a aquella utilizada en la
+									modalidad a distancia, sin embargo, dentro de la lista de pendientes se tiene
+									considerado que en una versión futura también se puedan procesar los planes de la
+									modalidad abierta. Para la modalidad escolarizada no aplica el uso de esta
+									aplicación, ya que en ese caso las tareas a entregar se van definiendo poco a poco a
+									lo largo del semestre y no todas al inicio tal y como sucede en el SUAYED.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 9  */-->
+					<div class="card">
+						<div class="card-header" id="headingNine">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseNine" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseNine" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">
+											¿Puedo usar esta aplicación si estudio en el SUAYED a distancia, pero no en
+											la FCA?
+										</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingNine" class="collapse" data-parent="#accordionExample"
+							 id="collapseNine">
+							<div class="card-body">
+								<p>
+									Por el momento no es posible, actualmente esta aplicación puede procesar únicamente
+									el formato de los planes de trabajo utilizados en la FCA para su modalidad a
+									distancia, por otro lado, para facultades diferentes a la FCA parece ser que los
+									planes de trabajo no se encuentran accesibles al público en general y únicamente un
+									estudiante de la facultad en cuestión que ingrese con su cuenta puede acceder a
+									ellos, debido a eso por el momento no es posible procesar los planes de trabajo de
+									otras facultades, sin embargo en un futuro y con el apoyo de estudiantes de dichas
+									facultades se puede considerar cambiar esta situación.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--/*  Question number 10  */-->
+					<div class="card">
+						<div class="card-header" id="headingTen">
+							<div class="h2 mb-0">
+								<a aria-controls="collapseTen" aria-expanded="false"
+								   class="btn btn-link btn-block text-left collapsed"
+								   data-target="#collapseTen" data-toggle="collapse" type="button">
+									<div class="row no-gutters lead accordion__question--line-height">
+										<div class="col">¿Cómo funciona esta aplicación?</div>
+										<i class="fas fa-chevron-down pl-2 pl-lg-0"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div aria-labelledby="headingTen" class="collapse" data-parent="#accordionExample"
+							 id="collapseTen">
+							<div class="card-body">
+								<p>
+									A grandes rasgos, esta aplicación recibe un plan de trabajo en formato PDF del cual
+									copiara todo su texto, normalmente la estructura del documento es la misma en todos
+									los planes de trabajo semestrales, es gracias a esto que se puede hacer uso de algo
+									llamado “expresiones regulares” lo cual nos permite poder ubicar y delimitar la
+									información requerida en cada documento para extraerla y así poder insertarla en
+									alguno de los dos tipos de archivos generados por esta aplicación.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/*  Footer fragment  */-->
+		<div th:replace="fragments/elements :: footer"></div>
+	</div>
+</div>
+<!--/*  Go to top button  */-->
+<th:block th:replace="fragments/elements :: go-to-top-btn"/>
+<!--/*  Javascript file with Jquery  */-->
+<script th:src="@{/js/converter.js}" type="text/javascript"></script>
+</body>
+</html>

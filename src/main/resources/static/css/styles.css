@@ -1,0 +1,60 @@
+/* Tags */
+body {
+    background: #EEE;
+}
+
+/* IDs */
+#about-container {
+    background: linear-gradient(150deg, rgb(28, 61, 108) 40%, rgb(233, 174, 60) 70%);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#go-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#overlay {
+    background: rgba(33, 33, 33, 0.8);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 25%;
+    display: none;
+}
+
+/* Classes */
+.accordion__question--line-height {
+    line-height: 1;
+}
+
+.container--light-font {
+    font-weight: 300;
+}
+
+.content--font-size {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.carousel-container__arrow--style {
+    color: red;
+    font-size: 2rem;
+}
+
+.current-page {
+    background: #D81B60;
+}

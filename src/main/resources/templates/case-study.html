@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!--/*  Head content  */-->
+	<th:block th:replace="fragments/elements :: header"/>
+	<title>Rhapsody Project | Estudio de caso</title>
+</head>
+<body>
+<div class="wrapper d-flex align-items-stretch">
+	<div id="content">
+		<!--/*  Top navigation bar  */-->
+		<th:block th:replace="fragments/elements :: navbar"/>
+		<div class="row no-gutters justify-content-center">
+			<!--/*  Main content - case study  */-->
+			<div class="shadow bg-light rounded col-12 col-lg-8 border mt-0 m-lg-5 p-3 p-md-5 content--font-size">
+				<p class="h3">Proyecto Rhapsody</p>
+				<br>
+				<p class="h5">Antecedentes</p>
+				<p>
+					Como estudiantes del SUAYED cada semestre tenemos disponibles uno o múltiples planes de trabajo los
+					cuales contienen un listado de todas las tareas a entregar durante el semestre, existen varias
+					maneras de organizar esa información y de planear una oportuna entrega de nuestras actividades, una
+					de las estrategias recomendadas es anotar en un calendario todas las tareas a entregar, sin embargo,
+					escribir manualmente o a computadora cada una de las tareas en un calendario puede ser una tarea que
+					consume mucho tiempo dependiendo de cuantas asignaturas estemos cursando lo cual puede ser
+					desalentador.
+				</p>
+				<br>
+				<p class="h5">Situación familiar y laboral de los estudiantes del SUAYED</p>
+				<p>
+					La Universidad Nacional Autónoma de México cuenta con el Sistema Universidad Abierta y Educación a
+					Distancia (SUAYED) el cual brinda la oportunidad de cursar estudios de nivel superior a personas que
+					no cuentan con el tiempo que el sistema escolarizado requiere, sin embargo, un porcentaje de estos
+					nuevos estudiantes ya cuentan con múltiples obligaciones las cuales les demandan tiempo y recursos,
+					tales como familia, trabajo, amigos, entre otras. Es por ello por lo que para un estudiante del
+					SUAYED es imperativo desarrollar la habilidad de la correcta administración de su tiempo, lo cual se
+					recalca a los estudiantes de nuevo ingreso de esta modalidad a través de un curso propedéutico.
+				</p>
+				<br>
+				<p class="h5">Importancia de la administración del tiempo siendo estudiantes</p>
+				<p>
+					Como estudiante del SUAYED es necesario administrar de manera adecuada todo el tiempo que se tiene
+					disponible, este hecho es tan importante que puede llegar a ser la diferencia entre concluir la
+					licenciatura de manera exitosa o abandonarla a mitad del camino, así entonces el estudiante en
+					cuestión necesita organizar el tiempo que tendrá disponible durante el día para cumplir con sus
+					actividades académicas sin descuidar los demás aspectos de su vida adulta.
+				</p>
+				<br>
+				<p class="h5">Identificación de actividades repetitivas</p>
+				<p>
+					A lo largo de la licenciatura se hace evidente que varias de las actividades académicas a realizar
+					llevan un proceso bastante similar entre ellas, algunas de ellas implican acciones repetitivas que
+					si bien pueden no consumir mucho tiempo por sí mismas, cuando se les considera a lo largo de la
+					licenciatura pueden llegar a sumar una gran cantidad de horas, un ejemplo de esto es la preparación
+					un archivo de Word el cual servirá como plantilla para la mayoría de las tareas a entregar, dicho
+					documento suele constar fundamentalmente de una página la cual contendrá (a manera de presentación)
+					una portada con los datos referentes a una tarea y a una materia en específico, si bien se puede
+					ahorrar algo de tiempo creando una plantilla común para todas las tareas a entregar aún se requiere
+					que se le realicen una serie de ajustes, tales como ingresar el nombre de la materia, numero de
+					tarea, fecha de entrega, clave de la asignatura, entre otros datos.<br>Otro ejemplo de una actividad
+					que se repite mucho a lo largo de un semestre es la lectura de la descripción de las tareas a
+					entregar para cada materia, si por ejemplo se están cursando 6 asignaturas entonces se requiere
+					abrir 6 planes de trabajo en formato PDF, en cada uno de ellos se deben ubicar todas las actividades
+					cuya fecha límite de entrega se encuentra más cercana y preferentemente se les ordenara de manera
+					ascendente para ir realizando cada una de ellas y así cumplir con todas las tareas del semestre. El
+					proceso descrito anteriormente suele realizarse una gran cantidad de veces durante toda la
+					licenciatura, por lo cual una estrategia para manejar esta situación es eligiendo a inicio de
+					semestre invertir minutos u horas para revisar todos los planes de trabajo, copiar a mano o a
+					computadora todas las descripciones de las tareas por entregar, ordenarlas por fecha y ponerlas en
+					un calendario para así simplemente poder revisar más rápido cuales tareas están más próximas a tener
+					que ser entregadas, esta estrategia es de gran ayuda para un estudiante ya que consultando el
+					calendario siempre se tendrá una idea clara del avance que se va realizando a lo largo del semestre.
+				</p>
+				<br>
+				<p class="h5">Reducción del tiempo utilizado en actividades repetitivas</p>
+				<p>
+					Gracias al uso de las tecnologías de la información hoy en día es posible automatizar una gran
+					cantidad de actividades repetitivas, con lo cual se logra un ahorro de tiempo y esfuerzo, desde
+					luego varias actividades realizadas por un estudiante del SUAYED también están en posibilidades de
+					ser automatizadas, para este caso en específico las actividades que pueden ser automatizadas son
+					aquellas listadas en los ejemplos ya antes mencionados, los cuales son la creación de portadas para
+					cada tarea a entregar y la generación de un calendario con todas las actividades pendientes a inicio
+					de semestre.
+				</p>
+				<br>
+				<p class="h5">Automatización de actividades repetitivas</p>
+				<p>
+					El proyecto rhapsody surge de la necesidad de poder automatizar la generación de todas las caratulas
+					y el calendario con las todas las tareas del semestre, de este modo se puede llegar a ahorrar una
+					gran cantidad de tiempo y esfuerzo ya que en unos cuantos minutos se pueden generar todos los
+					archivos que de otro modo tendrían que haber sido creados manualmente invirtiendo tiempo valioso,
+					por lo tanto, se puede dedicar más tiempo y atención a realizar las tareas y menos a la creación de
+					la caratulas o a la revisión de todos los planes de trabajo en busca de las actividades con fecha de
+					entrega más próxima.
+				</p>
+			</div>
+		</div>
+		<!--/*  Footer fragment  */-->
+		<div th:replace="fragments/elements :: footer"></div>
+	</div>
+</div>
+<!--/*  Go to top button  */-->
+<th:block th:replace="fragments/elements :: go-to-top-btn"/>
+<!--/*  Javascript file with Jquery  */-->
+<script th:src="@{/js/converter.js}" type="text/javascript"></script>
+</body>
+</html>

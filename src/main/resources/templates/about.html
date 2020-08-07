@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<th:block th:replace="fragments/elements :: header"/>
+	<title>Rhapsody Project | Acerca de</title>
+</head>
+<body>
+<div class="wrapper d-flex align-items-stretch">
+	<div id="content">
+		<!--/*  Top navigation bar  */-->
+		<th:block th:replace="fragments/elements :: navbar"/>
+		<!--/*  Main content  */-->
+		<div class="row no-gutters justify-content-center p-0 p-md-4">
+			<div class="col-12 col-lg-8">
+				<div class="p-3 text-light rounded-lg shadow" id="about-container">
+					<h1 class="display-4 text-center">Proyecto Rhapsody</h1>
+					<p class="lead text-center">Este sitio fue creado utilizando las siguientes tecnologías:</p>
+					<!--/*  Technologies used  */-->
+					<div class="my-4 row no-gutters">
+						<ul class="list-group col-11 col-md-6 mx-auto border border-secondary">
+							<li class="list-group-item text-light bg-dark">
+								<img alt="boot strap logo" class="col-3 col-xl-2 img-fluid" src=""
+									 th:src="@{/icons/spring-boot.png}">
+								Spring boot
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<img alt="java logo" class="col-3 col-xl-2 img-fluid" src=""
+									 th:src="@{/icons/java.png}">
+								Java
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<img alt="thymeleaf logo" class="col-3 col-xl-2 img-fluid" src=""
+									 th:src="@{/icons/thymeleaf.png}">
+								Thymeleaf
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<img alt="javascript logo" class="col-3 col-xl-2 img-fluid" src=""
+									 th:src="@{/icons/javascript.jpg}">
+								Javascript
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<img alt="jquery logo" class="col-3 col-xl-2 img-fluid" src=""
+									 th:src="@{/icons/jquery.png}">
+								jQuery
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<img alt="bootstrap logo" class="col-3 col-xl-2 img-fluid" src=""
+									 th:src="@{/icons/bootstrap.png}">
+								Bootstrap
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<img alt="html 5 logo" class="col-3 col-xl-2 img-fluid" src=""
+									 th:src="@{/icons/html5.png}">
+								HTML 5
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<img alt="css 3 logo" class="col-3 col-xl-2 img-fluid" src=""
+									 th:src="@{/icons/css3.png}">
+								CSS 3
+							</li>
+						</ul>
+					</div>
+					<!--/*  Libraries used  */-->
+					<div class="my-4 row no-gutters">
+						<ul class="list-group col-11 col-md-6 mx-auto border border-secondary">
+							<li class="list-group-item text-light bg-dark lead">
+								Este proyecto hace uso de las siguentes bibliotecas:
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<a class="text-white" href="https://pdfbox.apache.org/" target="_blank">
+									Apache PDFBox
+								</a>
+							</li>
+							<li class="list-group-item text-light bg-dark">
+								<a class="text-white" href="https://www.docx4java.org/trac/docx4j" target="_blank">
+									docx4j
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/*  Footer fragment  */-->
+		<div th:replace="fragments/elements :: footer"></div>
+	</div>
+</div>
+</body>
+</html>

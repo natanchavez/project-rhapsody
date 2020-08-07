@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>No title</title>
+</head>
+<body>
+<!--/*  Head content  */-->
+<th:block th:fragment="header">
+	<meta charset="UTF-8" content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<link href="/webjars/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>
+	<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link href="/webjars/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" th:href="@{/css/styles.css}"/>
+</th:block>
+<!--/*  Top navigation bar  */-->
+<th:block th:fragment="navbar">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-2 p-md-0">
+		<div class="navbar-brand">
+			<div class="lead">
+				<i class="fas fa-university" id="queen-annotation"></i>&nbsp;Proyecto Rhapsody
+			</div>
+		</div>
+		<button class="navbar-toggler btn-sm" data-target="#navbarNav" data-toggle="collapse" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item pl-2 p-md-0" th:classappend=
+						"${#strings.contains(#httpServletRequest.requestURI, 'home')} ? 'current-page active'">
+					<a class="nav-link navbar-link" href="/home">Inicio</a>
+				</li>
+				<li class="nav-item pl-2 p-md-0" th:classappend=
+						"${#strings.contains(#httpServletRequest.requestURI, 'instructions')} ? 'current-page active'">
+					<a class="nav-link navbar-link" href="/instructions">
+						Instrucciones
+					</a>
+				</li>
+				<li class="nav-item pl-2 p-md-0" th:classappend=
+						"${#strings.contains(#httpServletRequest.requestURI, 'faq')} ? 'current-page active'">
+					<a class="nav-link navbar-link" href="/faq">
+						Preguntas frecuentes
+					</a>
+				</li>
+				<li class="nav-item pl-2 p-md-0" th:classappend=
+						"${#strings.contains(#httpServletRequest.requestURI, 'case-study')} ? 'current-page active'">
+					<a class="nav-link navbar-link" href="/case-study">
+						Estudio de caso
+					</a>
+				</li>
+				<li class="nav-item pl-2 p-md-0" th:classappend=
+						"${#httpServletRequest.requestURI == '/about'} ? 'current-page active'">
+					<a class="nav-link navbar-link" href="/about">Acerca de</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</th:block>
+<!--/*  Form  */-->
+<th:block th:fragment="form (userType)">
+	<form action="/home" class="row row-cols-1 px-2 px-lg-4" enctype="multipart/form-data" method="POST">
+		<th:block th:switch="${userType}">
+			<th:block th:case="'student'">
+				<label class="lead" for="multiple-files">
+					1. Sube uno o múltiples planes de trabajo para convertir
+				</label>
+				<div class="p-2 p-lg-3">
+					<div class="custom-file">
+						<input accept="application/pdf" class="custom-file-input" id="multiple-files" multiple
+							   name="files" type="file">
+						<label class="custom-file-label" data-browse="Elegir" for="multiple-files"
+							   id="multiple-files-label">
+							Selecciona tus archivos
+						</label>
+					</div>
+				</div>
+			</th:block>
+			<th:block th:case="'visitor'">
+				<label class="lead" for="example-file">
+					1. Se elegirá un plan de trabajo falso para probar la aplicación
+				</label>
+				<div class="p-2 p-lg-3">
+					Archivo seleccionado:
+					<a th:href="@{/pdf/example.pdf}">plan de trabajo (ejemplo).pdf</a>
+				</div>
+				<input hidden="hidden" id="example-file" name="useExampleFile" type="text" value="true">
+			</th:block>
+		</th:block>
+		<div class="form-group">
+			<label class="lead" for="format">2. Elige el tipo de archivo que deseas generar</label>
+			<div class="p-2 p-lg-3">
+				<select class="form-control" id="format" name="format">
+					<option value="calendar">Tareas en calendario (iCalendar)</option>
+					<option value="word">Caratula para tareas (Word)</option>
+				</select>
+			</div>
+		</div>
+		<label class="lead" th:for="'generate-btn-' + ${userType}">3. Genera tus archivos</label>
+		<div class="p-2 p-lg-3">
+			<button class="btn btn-primary" th:id="'generate-btn-' + ${userType}" type="submit">Iniciar proceso</button>
+		</div>
+	</form>
+</th:block>
+<!--/*  Go to top button  */-->
+<th:block th:fragment="go-to-top-btn">
+	<a class="btn btn-primary" href="#" id="go-to-top-btn">
+		<i class="fas fa-chevron-up"></i>
+	</a>
+</th:block>
+<!--/*  Footer  */-->
+<th:block th:fragment="footer">
+	<footer class="bg-dark d-flex justify-content-center mt-auto">
+		<div class="text-center py-1">
+			<a class="mx-auto" href="https://natanchavez.github.io/">Developed by 「A. Chavez」</a>
+		</div>
+	</footer>
+</th:block>
+</body>
+</html>

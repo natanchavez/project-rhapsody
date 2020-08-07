@@ -1,0 +1,169 @@
+55----Acceso a la información pública gubernamental
+1215----Administración
+1157----Administración básica
+1426----Administración de cadenas de suministro
+87----Administración de empresas familiares
+1623----Administración de la remuneración
+1622----Administración de organizaciones del sector social
+1825----Administración de proyectos de inversión
+283----Administración de riesgos y auditoría interna
+1039----Administración del riesgo
+1824----Administración estratégica
+1624----Administración estratégica de operaciones de bienes y servicios
+1721----Administración publica
+1722----Administración táctica de operaciones de bienes y servicios
+2042----Análisis bursátil
+1322----Análisis del entorno económico político y social
+1164----Análisis diseño e implantación de algoritmos
+541----Análisis financiero gerencial
+1364----Arquitectura de computadoras
+45----Auditoria administrativa
+177----Auditoria al desempeño
+1664----Auditoria en informática
+1528----Auditoria I
+1627----Auditoria II
+1725----Auditoria III
+1658----Auditoría interna
+193----Auditoria operacional
+1365----Bases de datos
+2002----Capacitación de personal
+285----Coaching
+174----Complejidad y administración
+1343----Comportamiento en las organizaciones
+1151----Conceptos jurídicos fundamentales
+2078----Conducta del consumidor
+1165----Contabilidad
+1158----Contabilidad I
+1257----Contabilidad II
+1357----Contabilidad III
+1457----Contabilidad IV
+1558----Contabilidad V
+1659----Contribuciones indirectas y al comercio exterior
+1458----Control de gestión
+1351----Costos
+1358----Costos I
+1459----Costos II
+2033----Costos para la toma de decisiones
+1264----Costos y presupuestos
+1727----Creación de negocios de tecnología
+1723----Creación de organizaciones
+2080----Crédito y cobranzas
+543----Defensa fiscal
+1344----Derecho corporativo empresarial
+1452----Derecho fiscal
+1564----Derecho informático
+1352----Derecho laboral
+1252----Derecho mercantil
+1547----Desarrollo de aplicaciones en manejadores de bases de datos relacionales
+97----Desarrollo de habilidades gerenciales
+1655----Desarrollo de sitios web con transacciones en línea
+66----Desarrollo del potencial creativo
+1031----Desarrollo empresarial
+1032----Desarrollo organizacional
+1345----Desarrollo sustentable y las organizaciones
+1427----Desarrollo y calidad de vida para los recursos humanos
+1213----Diagnóstico de mercados
+1533----Dirección
+1141----Entorno de las organizaciones
+1347----Entorno de las organizaciones
+1142----Estadística descriptiva
+1253----Estadística I
+1353----Estadística II
+1242----Estadística inferencial
+99----Estrategia para el crecimiento y desarrollo de empresas
+1850----Ética en las organizaciones
+1625----Finanzas corporativas
+1428----Finanzas I (finanzas básicas)
+1529----Finanzas II (finanzas corporativas)
+1628----Finanzas III (mercados financieros)
+1726----Finanzas IV (proyectos de inversión)
+1826----Finanzas V (ingeniería financiera)
+205----Formación e información tributaria
+1143----Fundamentos de administración
+1346----Fundamentos de mercadotecnia
+1033----Gerencia del producto
+233----Gestión del conocimiento
+203----Gobierno corporativo
+1243----Información financiera
+1046----Informática fiscal
+379----Informática forense
+1169----Informática I (fundamentos)
+1216----Informática II (administración de requerimientos)
+1348----Informática III (análisis y diseño de sistemas estructurado)
+1445----Informática IV (análisis y diseño orientado a objetos)
+1568----Informática V (programación orientada a objetos)
+1656----Informática VI (programación e implementación de sistemas)
+1728----Informática VII (ingeniería de software)
+248----Instalación de redes
+1724----Instrumentos financieros
+1167----Introducción a la programación
+544----Inversión en instrumentos de deuda
+265----Investigación de mercados
+1545----ISR a salarios y seguridad social
+1159----Macroeconomía
+1254----Macroeconomía
+1154----Matemáticas financieras
+1168----Matemáticas I (algebra lineal)
+1217----Matemáticas II (razonamiento lógico matemático para la toma de decisiones)
+1349----Matemáticas III (calculo diferencial e integral)
+1446----Matemáticas IV (estadística descriptiva e inferencial)
+1566----Matemáticas V (matemáticas discretas)
+1667----Matemáticas VI (investigación de operaciones)
+2017----Mercado de valores
+1908----Mercadotecnia
+2009----Mercadotecnia directa
+127----Métodos estadísticos aplicados al control de la calidad
+1355----Microeconomía
+2005----Negociación sindical
+258----Normatividad y cableado estructurado
+1360----Operaciones
+1244----Organización y procedimientos
+1629----Personas físicas
+1546----Personas morales I
+1654----Personas morales II
+327----Perspectiva de género en las organizaciones
+1526----Plan de mercadotecnia
+1729----Planeación de proyectos informáticos
+1422----Planeación e integración de los recursos humanos
+383----Planeación estratégica de proyectos informáticos
+1423----Planeación y control
+1051----Portafolio de inversiones
+70----Prácticas de contabilidad empresarial
+1454----Presupuestos
+214----Prevención y detección de fraudes
+1765----Principios y técnicas de investigación
+1255----Principios y técnicas de la investigación
+1259----Principios y técnicas de la investigación
+1361----Programación (estructura de datos)
+1668----Programación de dispositivos móviles
+384----Programación de Enterprise Resource Planning (ERP)
+282----Programación neuro--lingüística
+328----Promoción de ventas
+1429----Razonamiento lógico matemático
+1424----Razonamiento lógico matemático para la toma de decisiones
+1260----Recursos humanos
+270----Redes inalámbricas
+2086----Reformas fiscales recientes
+2012----Relaciones publicas
+69----Responsabilidad social empresarial
+1767----Seguridad en informática
+386----Seguridad en redes
+1768----Servicios de tecnología
+1461----Sistemas de control interno
+1425----Sistemas de información de mercadotecnia
+335----Sistemas de información para recursos humanos
+336----Sistemas de remuneración
+1268----Sistemas operativos multiusuarios
+1269----Soporte técnico
+157----Tablero de control (Balanced Scorecard)
+1090----Taller de auditoria y dictamen fiscal
+1626----Técnicas de negociación empresarial
+1527----Técnicas enfoques y temas administrativos contemporáneos
+1144----Tecnologías de información y comunicación
+1160----Tecnologías de información y comunicación I
+1214----Tecnologías de información y comunicación II
+1467----Telecomunicaciones I (redes locales)
+1567----Telecomunicaciones II (redes globales)
+2074----Temas selectos en fiscal
+2090----Tendencias actuales en administración de recursos humanos
+1156----Teoría del conocimiento
